@@ -1,12 +1,13 @@
 {
-  "name": "37-redux-to-do-app-starting-repo",
+  "name": "redux-to-do-app",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "redux": "^5.0.1 "
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
