@@ -8,6 +8,8 @@ export const reducer = (state = [], action) => {
       return state.map((todo, id) =>
         id === action.payload.id ? { ...todo, complete: !todo.complete } : todo,
       );
+    case actions.DELETE_TODO:
+      return state.filter((todo, id) => id !== action.payload.id);
     default:
       return state;
   }
