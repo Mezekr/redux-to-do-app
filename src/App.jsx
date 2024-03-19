@@ -8,6 +8,14 @@ console.log("Intial State: ", store.getState());
 store.dispatch(addTodo("Dispatch my first action"));
 console.log("State after dispatch: ", store.getState());
 
+// Dispatch second addTodo action
+store.dispatch(addTodo("Dispatch my second action"));
+console.log("State after dispatch: ", store.getState());
+
+// Dispatch third addTodo action
+store.dispatch(addTodo("Dispatch my third action"));
+console.log("State after dispatch: ", store.getState());
+
 // Dispatch toggleTodo action
 store.dispatch(toggleTodo(0));
 console.log("State after toggleTodo dispatch: ", store.getState());
