@@ -1,12 +1,10 @@
-import { createRoot } from "react-dom/client";
-import MainView from "./components/main-view/main-view";
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
 import "./index.scss";
 
-function App() {
-  return <MainView />;
-}
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-root.render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
