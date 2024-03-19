@@ -4,6 +4,10 @@ export const reducer = (state = [], action) => {
   switch (action.type) {
     case actions.ADD_TODO:
       return [...state, { task: action.payload.task, complete: false }];
+    case actions.TOGGLE_TODO:
+      return state.map((todo, id) =>
+        id === action.payload.id ? { ...todo, complete: !todo.complete } : todo,
+      );
     default:
       return state;
   }

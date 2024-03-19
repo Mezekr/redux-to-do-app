@@ -4,3 +4,8 @@ export const addTodo = (task) => ({
   type: actions.ADD_TODO,
   payload: { task },
 });
+
+export const toggleTodo = (id) => ({
+  type: actions.TOGGLE_TODO,
+  payload: { id },
+});
